@@ -3,10 +3,13 @@
     color: #566a5e;
     text-align: center;
  }
-body{
-    color: #362b10;
-}
-
+ body {
+  background-image: url('assets/d.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center;
+  font-family: 'Roboto', sans-serif;  
 
 .students-container {
     display: grid; 
@@ -19,11 +22,10 @@ body{
   .student-container {
     border: 1px solid #a18b54; 
     padding: 15px;
-    background-color: #d0c8c8; 
+    
     border-radius: 55px;
     text-align: center;
     font-style: italic;
-    background: rgb(7,28,7);
-background: linear-gradient(90deg, rgba(7,28,7,1) 0%, rgba(93,0,1,1) 35%, rgba(0,0,0,1) 100%);
+ 
     
   }
