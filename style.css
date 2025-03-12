@@ -3,7 +3,7 @@ h1 {
   text-align: center;
 }
 body {
-  background-image: url('/assets/d.jpeg');
+  background-image: url('./assets/d.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   
