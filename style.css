@@ -1,31 +1,51 @@
-
- h1{
-    color: #566a5e;
-    text-align: center;
- }
- body {
-  background-image: url('assets/d.jpeg');
+h1 {
+  color: #566a5e;
+  text-align: center;
+}
+body {
+  background-image: url('/assets/d.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; 
-  background-position: center;
-  font-family: 'Roboto', sans-serif;  
-
-.students-container {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-   
-  }
   
-  .student-container {
-    border: 1px solid #a18b54; 
-    padding: 15px;
-    
-    border-radius: 55px;
-    text-align: center;
-    font-style: italic;
- 
-    
-  }
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+.photo-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #566a5e;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.students-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+.student-container {
+  border: 1px solid #c3b79a;
+  padding: 15px;
+  border-radius: 55px;
+  text-align: center;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
