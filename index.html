@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Randomizer</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <h1>Student Randomizer</h1>
 
     </header>
     <main>
+        <button onclick="getStudents()">Dammi gli studenti</button>
+        <button onclick="orderByName()">Ordina per nome</button>
+        <button onclick="orderByAge()">Ordina per età</button>
+        <button onclick="shuffle()">Randomizza</button>
         <div id="students-container" class="students-container">
     </main>
     <footer>
-        <p>©copright student randomizer s.r.l 2025 <p>
+        <p>©copright student randomizer s.r.l 2025
+        <p>
     </footer>
 </body>
 <script type="module" src="./src/app.js"></script>
+
 </html>
